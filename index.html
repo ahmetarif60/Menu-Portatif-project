@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Portatif</title>
+    <!--Boostrap Css CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- style dosyası -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="p-2">
+      <h1 class="text-center">Menümüz</h1>
+
+      <!-- Menu Filtre -->
+
+      <div class="d-flex justify-content-center gap-3">
+        <div class="btn btn-outline-primary filter-btn" data-id="all">Hepsi</div>
+        <div class="btn btn-outline-primary filter-btn" data-id="breakfast">Kahvaltı</div>
+        <div class="btn btn-outline-primary filter-btn" data-id="eats">Yemekler</div>
+        <div class="btn btn-outline-primary filter-btn" data-id="desserts">Tatlılar</div>
+      </div>
+      <!-- Menu Filtre -->
+
+      <div
+        class="row row-cols-1 row-cols-md-2 px-5 mx-5 justify-content-center"
+        id="menu-container"
+      ></div>
+    </div>
+
+    <!--! Script dosyası  -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
